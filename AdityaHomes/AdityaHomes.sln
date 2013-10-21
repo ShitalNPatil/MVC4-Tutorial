@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdityaHomes", "AdityaHomes\AdityaHomes.csproj", "{2C7BBC13-4248-4C73-B960-A621F97271C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdityaHomes.Tests", "AdityaHomes.Tests\AdityaHomes.Tests.csproj", "{9FC1D017-B629-4430-BBDD-9A389775C6B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{654709CD-76E0-42BE-9854-59CCB6323A89}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C7BBC13-4248-4C73-B960-A621F97271C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C7BBC13-4248-4C73-B960-A621F97271C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C7BBC13-4248-4C73-B960-A621F97271C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C7BBC13-4248-4C73-B960-A621F97271C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FC1D017-B629-4430-BBDD-9A389775C6B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC1D017-B629-4430-BBDD-9A389775C6B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FC1D017-B629-4430-BBDD-9A389775C6B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FC1D017-B629-4430-BBDD-9A389775C6B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

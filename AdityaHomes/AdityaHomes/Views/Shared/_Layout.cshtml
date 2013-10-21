@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />    
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        <link rel="stylesheet" type="text/css" href="~/Content/MyStyle.css" />
+      
+    </head>
+<body style="background-image: url('../Images/AHBackground.jpg')">
+     
+    <header>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <img src="~/Images/AHLogo.png" alt="AH Logo" /></td>
+                    <td style="vertical-align: central; width: 600px">
+                        <h1 style="text-align: center">Aditya Homes</h1>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </header>
+    <div id="leftpane" style="float: left; background-color: maroon;margin:20px;border-radius:10px;">
+        <menu>
+            <ul class="menu-wrapper">
+
+                <li>@Html.ActionLink("Home", "Index","Home",null,new {@style="color:white;"})</li>
+                <li>@Html.ActionLink("Project Details", "ProjectDetails","Home",null,new {@style="color:white;"})</li>
+                <li>@Html.ActionLink("Enquiry", "Enquiry","Enquiry",null,new {@style="color:white;"})</li>
+                <li>@Html.ActionLink("Countact Us", "Contact","Home",null,new {@style="color:white;"})</li>
+                <li>@Html.ActionLink("About Us", "About",null,new {@style="color:white;"})</li>
+            </ul>
+        </menu>
+    </div>
+    <div id="content" style="float: left;">
+        @RenderBody()
+    </div>
+
+    <footer>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/AnimationUsingJQ.js")
+    @RenderSection("scripts", required: false)
+     
+</body>
+</html>

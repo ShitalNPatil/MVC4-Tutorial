@@ -1,0 +1,39 @@
+﻿@model IEnumerable<AdityaHomes.Models.EnquiryModel>
+
+@{
+    ViewBag.Title = "EnquiryList";
+}
+
+<h2>EnquiryList</h2>
+
+<fieldset>
+    <legend>EnquiryModel</legend>
+    <div class="CSSTableGenerator" >
+    <table>
+        <thead title="Enquiry Listing"></thead>
+           <tr>
+            <td>No.</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Message <br /> Reply</td>
+            <td>Enquiry Date<br />Status</td>
+            <td>Reply</td>
+        </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.enquiryID</td>
+            <td>@item.name</td>
+            <td>@item.email</td>
+            <td>@item.message <br /> <strong>Reply: </strong>@item.reply</td>
+            <td>@item.enquiryDate<br />@item.status</td>
+            <td>@Html.ActionLink("Reply", "Reply", new { id=item.enquiryID})</td>
+        </tr>
+    }
+        </table>
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Enquiry", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "EnquiryList")
+</p>

@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Index.Phone";
+    Layout = "~/Views/Shared/_Layout.phone.cshtml";
+}
+
+<h2>Aditya Homes</h2>
+<ul data-role="listview" data-inset="true" data-theme="b">    
+    <li>@Html.ActionLink("Project Details", "ProjectDetails","Home")</li>
+    <li>@Html.ActionLink("Enquiry", "Enquiry","Enquiry")</li>
+    <li>@Html.ActionLink("Countact Us", "Contact","Home")</li>
+    <li>@Html.ActionLink("About Us", "About")</li>    
+</ul>

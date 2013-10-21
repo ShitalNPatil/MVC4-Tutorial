@@ -1,0 +1,38 @@
+﻿@model AdityaHomes.Models.EnquiryModel
+
+@{
+    ViewBag.Title = "Enquiry";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Enquiry</h2>
+@using (Html.BeginForm("CreateEnquiry", "Enquiry"))
+{
+    @Html.ValidationSummary()
+    <fieldset>
+       
+        @Html.LabelFor(x => x.name)
+        @Html.EditorFor(x => x.name)
+         
+
+        @Html.LabelFor(x => x.email)
+        @Html.EditorFor(x => x.email)
+
+
+        @Html.LabelFor(x => x.message)
+        @Html.TextAreaFor(x => x.message)
+
+        <br />
+        <input type="submit" value="Submit Enquiry" />
+    </fieldset>
+    <p>
+        @Html.ActionLink("EnquiryList", "EnquiryList")
+        </p>
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

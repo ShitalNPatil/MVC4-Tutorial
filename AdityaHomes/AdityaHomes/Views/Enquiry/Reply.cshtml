@@ -1,0 +1,32 @@
+﻿@model AdityaHomes.Models.EnquiryModel
+
+@{
+    ViewBag.Title = "Reply";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Reply</h2>
+@using (Html.BeginForm("Reply","Enquiry")){
+    <fieldset>
+        @Html.HiddenFor(x => x.enquiryID)
+        @Html.HiddenFor(x => x.enquiryDate)
+
+        @Html.LabelFor(x => x.name)
+        @Html.DisplayFor(x => x.name)
+        @Html.HiddenFor(x => x.name)
+
+        @Html.LabelFor(x => x.email)
+        @Html.DisplayFor(x => x.email)
+        @Html.HiddenFor(x => x.email)
+
+        @Html.LabelFor(x => x.message)
+        @Html.DisplayFor(x => x.message)
+        @Html.HiddenFor(x => x.message)
+
+        @Html.LabelFor(x => x.reply)
+        @Html.EditorFor(x => x.reply)
+
+        <br />
+        <input type="submit" value="Reply" />
+    </fieldset>
+}
